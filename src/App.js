@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import HomePage from './homepage.componet';
+import HomePage from './pages/homepage/homepage.componet';
 class App extends Component {
   render() {
     return <div className='App'><HomePage /></div>;
