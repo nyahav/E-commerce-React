@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, useRoutes } from 'react-router-dom';  // Import necessary components
 import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shoppage/shoppage.component';
-
+import Header from './components/header/header.component';
 
 
 const AppRoutes = () => {
@@ -18,6 +18,7 @@ const AppRoutes = () => {
 const App = () => {
   return (
     <BrowserRouter>  {/* Wrap routes in <BrowserRouter> */}
+      <Header/>
       <AppRoutes />  {/* Call your routes */}
     </BrowserRouter>
   );
