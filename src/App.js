@@ -1,18 +1,14 @@
 import React from 'react';
 import { BrowserRouter, useRoutes } from 'react-router-dom';  // Import necessary components
 import HomePage from './pages/homepage/homepage.component';
+import ShopPage from './pages/shoppage/shoppage.component';
 
 
-const HatsPage = () => (
-  <div>
-    <h1>HATS PAGE </h1>
-  </div>
-);
 
 const AppRoutes = () => {
   const routes = [
     { path: '/', element: <HomePage /> },
-    { path: '/hats', element: <HatsPage /> },
+    { path: '/shop', element: <ShopPage /> },
   ];
 
   // useRoutes() returns the routes based on the array provided
