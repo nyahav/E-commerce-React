@@ -3,12 +3,13 @@ import { BrowserRouter, useRoutes } from 'react-router-dom';  // Import necessar
 import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shoppage/shoppage.component';
 import Header from './components/header/header.component';
-
+import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 
 const AppRoutes = () => {
   const routes = [
     { path: '/', element: <HomePage /> },
     { path: '/shop', element: <ShopPage /> },
+    { path: '/signin', element: <SignInAndSignUpPage /> },
   ];
 
   // useRoutes() returns the routes based on the array provided
